@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>511</width>
+      <height>461</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>0</y>
+      <width>291</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>230</y>
+      <width>291</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>808</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuGrayscale">
+    <property name="title">
+     <string>Grayscale</string>
+    </property>
+    <addaction name="actionGrayscale_Red"/>
+    <addaction name="actionGrayscale_Green"/>
+    <addaction name="actionGrayscale_Blue"/>
+   </widget>
+   <widget class="QMenu" name="menuLayer">
+    <property name="title">
+     <string>Layer</string>
+    </property>
+    <addaction name="actionLayer_Red"/>
+    <addaction name="actionLayer_Green"/>
+    <addaction name="actionLayer_Blue"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuGrayscale"/>
+   <addaction name="menuLayer"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGrayscale_Red">
+   <property name="text">
+    <string>Grayscale Red</string>
+   </property>
+  </action>
+  <action name="actionGrayscale_Green">
+   <property name="text">
+    <string>Grayscale Green</string>
+   </property>
+  </action>
+  <action name="actionGrayscale_Blue">
+   <property name="text">
+    <string>Grayscale Blue</string>
+   </property>
+  </action>
+  <action name="actionLayer_Red">
+   <property name="text">
+    <string>Layer Red</string>
+   </property>
+  </action>
+  <action name="actionLayer_Green">
+   <property name="text">
+    <string>Layer Green</string>
+   </property>
+  </action>
+  <action name="actionLayer_Blue">
+   <property name="text">
+    <string>Layer Blue</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

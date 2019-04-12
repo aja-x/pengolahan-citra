@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>411</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>0</y>
+      <width>411</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuKuantisasi">
+     <property name="title">
+      <string>Kuantisasi</string>
+     </property>
+     <addaction name="actionKuantisasi_8"/>
+     <addaction name="actionKuantisasi_16"/>
+     <addaction name="actionKuantisasi_32"/>
+     <addaction name="actionKuantisasi_64"/>
+    </widget>
+    <widget class="QMenu" name="menuThreshold">
+     <property name="title">
+      <string>Threshold</string>
+     </property>
+     <addaction name="actionHitam_Putih_2"/>
+     <addaction name="actionNilai_100"/>
+     <addaction name="actionNilai_200"/>
+    </widget>
+    <addaction name="actionGrayscale"/>
+    <addaction name="menuKuantisasi"/>
+    <addaction name="menuThreshold"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuTools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionHitam_Putih">
+   <property name="text">
+    <string>Hitam Putih</string>
+   </property>
+  </action>
+  <action name="actionGrayscale">
+   <property name="text">
+    <string>Grayscale</string>
+   </property>
+  </action>
+  <action name="actionKuantisasi_8">
+   <property name="text">
+    <string>Kuantisasi 8</string>
+   </property>
+  </action>
+  <action name="actionKuantisasi_16">
+   <property name="text">
+    <string>Kuantisasi 16</string>
+   </property>
+  </action>
+  <action name="actionKuantisasi_32">
+   <property name="text">
+    <string>Kuantisasi 32</string>
+   </property>
+  </action>
+  <action name="actionKuantisasi_64">
+   <property name="text">
+    <string>Kuantisasi 64</string>
+   </property>
+  </action>
+  <action name="actionHitam_Putih_2">
+   <property name="text">
+    <string>Hitam Putih</string>
+   </property>
+  </action>
+  <action name="actionNilai_100">
+   <property name="text">
+    <string>Nilai 100</string>
+   </property>
+  </action>
+  <action name="actionNilai_200">
+   <property name="text">
+    <string>Nilai 200</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

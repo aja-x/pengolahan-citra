@@ -1,0 +1,27 @@
+float[] a = new float[5];
+a[1] = (float) 0.2;
+a[2] = (float) 0.2;
+a[3] = (float) 0.2;
+a[4] = (float) 0.2;
+a[0] = (float) 0.2;
+objBitmap1 = newBitmap(objBitmap);
+for (int x = 1; x < objBitmap.Width - 1; x++)
+  for (int y = 1; y < objBitmap.Height - 1; y++) {
+    Color w1 = objBitmap.GetPixel(x - 1, y);
+    Color w2 = objBitmap.GetPixel(x + 1, y);
+    Color w3 = objBitmap.GetPixel(x, y - 1);
+    Color w4 = objBitmap.GetPixel(x, y + 1);
+    Color w = objBitmap.GetPixel(x, y);
+    int x1 = w1.R;
+    int x2 = w2.R;
+    int x3 = w3.R;
+    int x4 = w4.R;
+    int xg = w.R;
+    int xb = (int)(a[0] * xg);
+    xb = (int)(xb + a[1] * x1 + a[2] * x2 + a[3] * x3 + a[3] * x4);
+    if (xb < 0) xb = 0;
+    if (xb > 255) xb = 255;
+    Color wb = Color.FromArgb(xb, xb, xb);
+    objBitmap1.SetPixel(x, y, wb);
+  }
+pictureBox2.Image = objBitmap1;
